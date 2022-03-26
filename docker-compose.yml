@@ -1,0 +1,14 @@
+version: "3"
+services:
+  forsaken-mail:
+    image: cokemine/forsaken-mail
+    container_name: forsaken-mail
+    restart: always
+
+    environment:
+      KEYWORD_BLACK_LIST: ''
+      HOST: ''
+
+    ports:
+      - "3000:3000"
+      - "25:25"
